@@ -1,0 +1,108 @@
+rhino ➜  ~/projects/test_cabal_dev  cabal-dev clean                                 
+cleaning...
+rhino ➜  ~/projects/test_cabal_dev  cabal-dev install --enable-tests --enable-shared
+Resolving dependencies...
+Configuring hastache-0.4.2...
+Building hastache-0.4.2...
+Preprocessing library hastache-0.4.2...
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 2] Compiling Text.Hastache    ( Text/Hastache.hs, dist/build/Text/Hastache.o )
+[2 of 2] Compiling Text.Hastache.Context ( Text/Hastache/Context.hs, dist/build/Text/Hastache/Context.o )
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 2] Compiling Text.Hastache    ( Text/Hastache.hs, dist/build/Text/Hastache.p_o )
+[2 of 2] Compiling Text.Hastache.Context ( Text/Hastache/Context.hs, dist/build/Text/Hastache/Context.p_o )
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 2] Compiling Text.Hastache    ( Text/Hastache.hs, dist/build/Text/Hastache.dyn_o )
+[2 of 2] Compiling Text.Hastache.Context ( Text/Hastache/Context.hs, dist/build/Text/Hastache/Context.dyn_o )
+<command line>: cannot satisfy -package-id ieee754-0.7.3-705469e6d7c149de032eb436e88e2236
+    (use -v for more information)
+cabal: Error: some packages failed to install:
+hastache-0.4.2 failed during the building phase. The exception was:
+ExitFailure 1
+test-0.1.0.0 depends on hastache-0.4.2 which failed to install.
+rhino ➜  ~/projects/test_cabal_dev  cabal-dev install --enable-tests --disable-shared
+Resolving dependencies...
+Configuring hastache-0.4.2...
+Building hastache-0.4.2...
+Preprocessing library hastache-0.4.2...
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 2] Compiling Text.Hastache    ( Text/Hastache.hs, dist/build/Text/Hastache.o )
+[2 of 2] Compiling Text.Hastache.Context ( Text/Hastache/Context.hs, dist/build/Text/Hastache/Context.o )
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 2] Compiling Text.Hastache    ( Text/Hastache.hs, dist/build/Text/Hastache.p_o )
+[2 of 2] Compiling Text.Hastache.Context ( Text/Hastache/Context.hs, dist/build/Text/Hastache/Context.p_o )
+Registering hastache-0.4.2...
+Running Haddock for hastache-0.4.2...
+Warning: The documentation for the following packages are not installed. No
+links will be generated to these packages: rts-1.0
+Preprocessing library hastache-0.4.2...
+Haddock coverage:
+  81% ( 13 / 16) in 'Text.Hastache'
+ 100% (  3 /  3) in 'Text.Hastache.Context'
+Documentation created: dist/doc/html/hastache/index.html
+Installing library in
+/home/mwotton/projects/test_cabal_dev/cabal-dev//lib/hastache-0.4.2/ghc-7.6.1
+Registering hastache-0.4.2...
+Configuring test-0.1.0.0...
+Building test-0.1.0.0...
+Preprocessing test suite 'tester' for test-0.1.0.0...
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+[1 of 1] Compiling Main             ( main.hs, dist/build/tester/tester-tmp/Main.p_o )
+
+main.hs:6:9: Warning:
+    In the use of `LZ.putStrLn' (imported from Data.ByteString.Lazy):
+    Deprecated: "Use Data.ByteString.Lazy.Char8.putStrLn instead. (Functions that rely on ASCII encodings belong in Data.ByteString.Lazy.Char8)"
+Linking dist/build/tester/tester ...
+Preprocessing library test-0.1.0.0...
+Registering test-0.1.0.0...
+Running Haddock for test-0.1.0.0...
+Warning: The documentation for the following packages are not installed. No
+links will be generated to these packages: rts-1.0
+Preprocessing test suite 'tester' for test-0.1.0.0...
+Preprocessing library test-0.1.0.0...
+haddock: No input file(s).
+Running 1 test suites...
+Test suite tester: RUNNING...
+Test suite tester: PASS
+Test suite logged to: dist/test/test-0.1.0.0-tester.log
+1 of 1 test suites (1 of 1 test cases) passed.
+Installing library in
+/home/mwotton/projects/test_cabal_dev/cabal-dev//lib/test-0.1.0.0/ghc-7.6.1
+Registering test-0.1.0.0...
+rhino ➜  ~/projects/test_cabal_dev
+
+
+
